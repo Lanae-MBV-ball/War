@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100; /* <weight>: Use a value from 100 to 900 */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 20px;
+     img {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        height: auto;
+        align-items: right;
+}
+}
+
+body {
+    font-family: "Noto Serif", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff; /* Light background */
+    margin: 0;
+}
+
+
+
+h1 {
+    font-size: 36px; 
+    color: #222222; /* Dark color for contrast */
+    font-family: "lavishly Yours", cursive; 
+    margin-bottom: 10px;
+    align-items: top-left;
+}
+
+p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #333333; /* Dark text for readability */
+    font-family: "lavishly Yours", cursive; 
+    align-items: top-left;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+.player-section {
+    padding: 20px;
+    border: 1px solid #4b4949;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.deck {
+    width: 100px;
+    height: 140px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px auto;
+    background-color: rgb(255, 0, 157); /* Back of the card */
+}
+
+.card-in-play {
+    width: 100px;
+    height: 140px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px auto;
+    background-color: white; /* Face of the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#deal-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border: solid 2px black;
+}
+
+#winner-announcement {
+    grid-column: span 3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.suit img {
+    padding: 3px;
+    width: 30px;
+}

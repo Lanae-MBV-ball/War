@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play War</title>
+    <link rel="stylesheet" href="./extras/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Let's Play War!</h1>
+        <p>A simple card game for two players.</p>
+        <!-- Display the SavvyLane logo; use <img> so it is visible on the page -->
+        <img id="savvy-logo" src="Images/SavvyLanelogo.png" alt="SavvyLane logo" />
+    </header>
+    <div class="game-container">
+        <div class="player-section">
+            <h2 id="player1-name">Player 1</h2>
+            <div class="deck player1-deck" id="player1-deck"></div>
+            <p>Cards: <span id="player1-count">26</span></p>
+        </div>
+
+
+        <div class="play-area">
+            <div class="card-in-play" id="player1-card"></div>
+            <div class="card-in-play" id="player2-card"></div>
+            <button id="deal-button">Deal/Next Round</button>
+            <p id="game-message">Click 'Deal' to start the game!</p>
+            <div id="winner-announcement"></div>
+        </div>
+
+        <div class="player-section">
+            <h2 id="player2-name">Player 2 (Computer)</h2>
+            <div class="deck player2-deck" id="player2-deck"></div>
+            <p>Cards: <span id="player2-count">26</span></p>
+        </div>
+    </div>
+
+    <script src="./extras/script.js"></script>
+</body>
+</html>
