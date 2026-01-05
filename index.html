@@ -28,6 +28,26 @@
             <button id="deal-button">Deal/Next Round</button>
             <p id="game-message">Click 'Deal' to start the game!</p>
             <div id="winner-announcement"></div>
+            <!-- Math game UI -->
+            <div class="math-game">
+                <h3>Math Game</h3>
+                <!-- Advantage badge: shown when player earned math advantage -->
+                <div id="math-adv-badge" class="adv-badge" hidden>Advantage: next War round auto-win</div>
+                <label for="math-op">Operation:</label>
+                <select id="math-op">
+                    <option value="add">Addition (+)</option>
+                    <option value="sub">Subtraction (−)</option>
+                    <option value="mul">Multiplication (×)</option>
+                </select>
+                <button id="math-new">New Problem</button>
+
+                <div id="math-problem" aria-live="polite" style="margin-top:8px;font-weight:bold;"></div>
+
+                <input id="math-answer" type="number" placeholder="Your answer" />
+                <button id="math-submit">Submit</button>
+                <div id="math-feedback" aria-live="polite"></div>
+                <p>Score: <span id="math-score">0</span></p>
+            </div>
         </div>
 
         <div class="player-section">

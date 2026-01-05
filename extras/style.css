@@ -18,13 +18,13 @@
 header {
     text-align: left;
     margin-bottom: 20px;
-     img {
-        display: block;
-        margin: 0 auto;
-        max-width: 200px;
-        height: auto;
-        align-items: right;
 }
+
+header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
 }
 
 body {
@@ -110,4 +110,42 @@ p {
 .suit img {
     padding: 3px;
     width: 30px;
+}
+
+/* Math game styles */
+.math-game {
+    margin-top: 12px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+.math-game select,
+.math-game input {
+    padding: 6px 8px;
+    font-size: 16px;
+}
+.math-game button {
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.math-game #math-problem {
+    font-size: 18px;
+}
+.math-game #math-feedback {
+    font-weight: bold;
+}
+
+/* Advantage badge styling */
+.adv-badge {
+    background: linear-gradient(180deg,#ffd54a,#ffde59);
+    color: #222;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
